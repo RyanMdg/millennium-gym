@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Michroma", "Inter", sans-serif;
+  --font-condensed: "Oswald", "Inter", sans-serif;
+
+  --color-ink-950: #050506;
+  --color-ink-900: #0a0a0c;
+  --color-ink-850: #0f0f12;
+  --color-ink-800: #15151a;
+  --color-ink-700: #202027;
+  --color-ink-600: #2c2c35;
+  --color-ink-500: #4a4a55;
+
+  --color-brand-300: #ff6b7a;
+  --color-brand-400: #ff3b4f;
+  --color-brand-500: #e8192f;
+  --color-brand-600: #c01024;
+  --color-brand-700: #8e0b1a;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-ink-950 font-sans text-zinc-200 antialiased;
+}
+
+/* Brushed-silver lettering, like the billboard wordmark */
+@utility text-chrome {
+  background: linear-gradient(180deg, #ffffff 0%, #e6e8eb 42%, #8d929b 54%, #d9dce1 78%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility text-redmetal {
+  background: linear-gradient(180deg, #ff6b7a 0%, #e8192f 50%, #9e0f1d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
